@@ -68,7 +68,7 @@ public class BrushDrawingView extends View {
 
     private void setupBrushDrawing() {
         //Caution: This line is to disable hardware acceleration to make eraser feature work properly
-        setLayerType(LAYER_TYPE_HARDWARE, null);
+        setLayerType(LAYER_TYPE_SOFTWARE, null);
         mDrawPaint.setColor(Color.BLACK);
         setupPathAndPaint();
         setVisibility(View.GONE);
